@@ -1,9 +1,11 @@
-include<stdio.h>
-int main()
+#include<stdio.h>
+int main(int argc,char *argv[])
 {
-printf("hello,world!");
+if(arg!=2)
+{
+printf("USAGE: %s name\n",argv[0]);
+return -1;
 }
-B
-D
-C
-
+printf("Hello, %s!\n",argv[1]);
+return 0;
+}
